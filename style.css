@@ -1,0 +1,148 @@
+/* Fonts */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #fffafc;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(120deg, #f9c5d1, #ffe6f0);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar h1 {
+  font-family: "Playfair Display", serif;
+  color: #d6336c;
+  margin: 0;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+}
+.navbar nav a:hover {
+  color: #a61c4c;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 0;
+  background: #fffafc;
+  color: #d6336c;
+}
+.hero-image {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.hero-content {
+  padding: 3rem 2rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Playfair Display", serif;
+  color: #d6336c;
+}
+.hero .btn {
+  display: inline-block;
+  background: #d6336c;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+.hero .btn:hover {
+  background: #a61c4c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.2);
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.section h2 {
+  font-family: "Playfair Display", serif;
+  color: #c2185b;
+  margin-bottom: 1rem;
+}
+
+/* Services Grid */
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.card {
+  background: #ffe6f0;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+/* Gallery */
+.gallery .insta {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+/* Contact */
+.contact p {
+  margin: 0.5rem 0;
+}
+.contact a {
+  color: #d6336c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact a:hover {
+  color: #a61c4c;
+}
+
+/* Footer */
+footer {
+  background: #ffe6f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
